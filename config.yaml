@@ -1,7 +1,7 @@
 baseURL: https://danielmaangi.netlify.app/
 defaultContentLanguage: en
 theme: uBlogger
-title: uBlogger
+title: Daniel Maangi
 enableRobotsTXT: yes
 enableGitInfo: yes
 enableEmoji: yes
