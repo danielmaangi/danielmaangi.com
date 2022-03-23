@@ -264,7 +264,7 @@ params:
     mobileMode: auto
     title:
       logo: ''
-      name: uBlogger
+      name: Daniel Maangi
       post: ''
       pre: <i class='fas fa-pencil-alt fa-fw'></i>
   images: /logo.png
