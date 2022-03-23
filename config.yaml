@@ -71,13 +71,13 @@ languages:
           enable: yes
           paginate: 6
         profile:
-          avatarURL: /images/avatar.png
+          avatarURL: /images/Maangi_2020.png
           disclaimer: ''
           enable: yes
           gravatarEmail: ''
           social: yes
-          subtitle: A Clean, Elegant but Advanced Hugo Theme
-          title: uBlogger | Hugo Theme
+          subtitle: Data, visualization, business intelligence and machine learning.
+          title: Daniel Maangi | Welcome to my blog
         rss: 10
       keywords:
         - Theme
