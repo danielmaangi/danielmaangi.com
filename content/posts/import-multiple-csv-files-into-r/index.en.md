@@ -14,12 +14,13 @@ title: Import and combine numerous .csv files using R
 weight: 3
 ---
 
-**R** provides a simple way of reading and combining multiple csv files.
+**R** provides a simple and effective way of reading and combining multiple csv files.
 
 <!--more-->
 
 I was in a situation where I had more than 50 .csv files of the same structure and I was wondering how I can quickly import and combine all of them into a single data frame in R so that I can perform some transformations I needed on the whole data set.
-## 1 figure {#figure}
+
+## 1 figure {#The difficult approach}
 
 At first I was thinking of this!
 
@@ -47,6 +48,7 @@ data = rbind(data_1, data_2, ..., data_n)
 This is time consuming, onerous and error-prone. The good thing is that R is a functional programming language and this task can be easily accomplished in just a few seconds using read_csv, list.files (), map(), map_df() and rbind() as shown by the code below.
 
 
+## 1 figure {#The easier approach}
 
 ```markdown
 # remove # if yo have not installed tidyr
