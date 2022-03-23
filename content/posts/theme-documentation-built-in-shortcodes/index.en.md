@@ -1,9 +1,8 @@
 ---
 categories:
 - documentation
-date: "2020-03-04T16:29:41+08:00"
-description: Hugo provides multiple built-in shortcodes for author convenience and
-  to keep your markdown content clean.
+date: "2022-03-23 19:21:08 EAT"
+description: This post provides a simple guide on how to import and combine numerous csv files in R.
 draft: false
 lastmod: "2020-03-04T16:29:41+08:00"
 resources:
@@ -11,169 +10,65 @@ resources:
   src: featured-image.png
 tags:
 - shortcodes
-title: Theme Documentation - Built-in Shortcodes
+title: Import and combine numerous .csv files using R
 weight: 3
 ---
 
-**Hugo** provides multiple built-in shortcodes for author convenience and to keep your markdown content clean.
+**R** provides a simple way of reading and combining multiple csv files.
 
 <!--more-->
 
-Hugo uses Markdown for its simple content format. However, there are a lot of things that Markdown doesn’t support well. You could use pure HTML to expand possibilities.
-
-But this happens to be a bad idea. Everyone uses Markdown because it’s pure and simple to read even non-rendered. You should avoid HTML to keep it as simple as possible.
-
-To avoid this limitations, Hugo created [shortcodes](https://gohugo.io/extras/shortcodes/).
-A shortcode is a simple snippet that can generate reasonable HTML code and conforms to Markdown's design philosophy.
-
-Hugo ships with a set of predefined shortcodes that represent very common usage. These shortcodes are provided for author convenience and to keep your markdown content clean.
-
+I was in a situation where I had more than 50 .csv files of the same structure and I was wondering how I can quickly import and combine all of them into a single data frame in R so that I can perform some transformations I needed on the whole data set.
 ## 1 figure {#figure}
 
-[Documentation of `figure`](https://gohugo.io/content-management/shortcodes#figure)
-
-Example `figure` input:
+At first I was thinking of this!
 
 ```markdown
-{{</* figure src="/images/lighthouse.jpg" title="Lighthouse (figure)" */>}}
+# remove # if yo have not installed tidyr
+# install.packages ("tidyr")
+
+#load required package
+library(readr)
+
+#Read the files individually using readr package
+data_1 = read_csv("file1.csv") 
+data_2 = read_csv("file2.csv")
+.
+.
+.
+data_n = read_csv("file3.csv")
+
+# Combine the files into one dataset using base R's rbind function
+data = rbind(data_1, data_2, ..., data_n)
 ```
 
-The rendered output looks like this:
 
-{{< figure src="/images/lighthouse.jpg" title="Lighthouse (figure)" >}}
 
-The HTML looks like this:
+This is time consuming, onerous and error-prone. The good thing is that R is a functional programming language and this task can be easily accomplished in just a few seconds using read_csv, list.files (), map(), map_df() and rbind() as shown by the code below.
 
-```html
-<figure>
-    <img src="/images/lighthouse.jpg"/>
-    <figcaption>
-        <h4>Lighthouse (figure)</h4>
-    </figcaption>
-</figure>
-```
 
-## 2 gist
-
-[Documentation of `gist`](https://gohugo.io/content-management/shortcodes#gist)
-
-Example `gist` input:
 
 ```markdown
-{{</* gist spf13 7896402 */>}}
+# remove # if yo have not installed tidyr
+# install.packages ("tidyr") 
+
+# Load the required package
+library(readr) 
+
+# .csv files directory/ folder path
+csv_folder <- list.files(path = "C:/Users/../My Csv Files", 
+pattern = "*.csv", full.names = T)
+
+# read and combine the individual files in the folder
+mydata <- csv_folder %>%
+  map(read_csv) %>%
+  map_df(rbind)
 ```
 
-The rendered output looks like this:
-
-{{< gist spf13 7896402 >}}
-
-The HTML looks like this:
-
-```html
-<script type="application/javascript" src="https://gist.github.com/spf13/7896402.js"></script>
-```
-
-## 3 highlight
-
-[Documentation of `highlight`](https://gohugo.io/content-management/shortcodes#instagram)
-
-Example `highlight` input:
-
-```markdown
-{{</* highlight html */>}}
-<section id="main">
-    <div>
-        <h1 id="title">{{ .Title }}</h1>
-        {{ range .Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-    </div>
-</section>
-{{</* /highlight */>}}
-```
-
-The rendered output looks like this:
-
-{{< highlight html >}}
-<section id="main">
-    <div>
-        <h1 id="title">{{ .Title }}</h1>
-        {{ range .Pages }}
-            {{ .Render "summary"}}
-        {{ end }}
-    </div>
-</section>
-{{< /highlight >}}
-
-## 4 instagram
-
-[Documentation of `instagram`](https://gohugo.io/content-management/shortcodes#instagram)
-
-Example `instagram` input:
-
-```markdown
-{{</* instagram BWNjjyYFxVx hidecaption */>}}
-```
-
-The rendered output looks like this:
+And there you go - all data has been loaded and combined into a single data frame. Note how it's easier to use the pipe "%>%" operator. In my next post, I will focus on .xlsx and .xls files.
 
 
-## 5 param
+Thanks for reading!
 
-[Documentation of `param`](https://gohugo.io/content-management/shortcodes#param)
 
-Example `param` input:
 
-```markdown
-{{</* param description */>}}
-```
-
-The rendered output looks like this:
-
-{{< param description >}}
-
-## 6 ref and relref {#ref-and-relref}
-
-[Documentation of `ref` and `relref`](https://gohugo.io/content-management/shortcodes#ref-and-relref)
-
-## 7 tweet
-
-[Documentation of `tweet`](https://gohugo.io/content-management/shortcodes#tweet)
-
-Example `tweet` input:
-
-```markdown
-{{</* tweet 877500564405444608 */>}}
-```
-
-The rendered output looks like this:
-
-{{< tweet 877500564405444608 >}}
-
-## 8 vimeo
-
-[Documentation of `vimeo`](https://gohugo.io/content-management/shortcodes#vimeo)
-
-Example `vimeo` input:
-
-```markdown
-{{</* vimeo 146022717 */>}}
-```
-
-The rendered output looks like this:
-
-{{< vimeo 146022717 >}}
-
-## 9 youtube
-
-[Documentation of `youtube`](https://gohugo.io/content-management/shortcodes#youtube)
-
-Example `youtube` input:
-
-```markdown
-{{</* youtube w7Ft2ymGmfc */>}}
-```
-
-The rendered output looks like this:
-
-{{< youtube w7Ft2ymGmfc >}}
