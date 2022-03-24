@@ -305,7 +305,7 @@ params:
     seo:
       images: []
       publisher:
-        logoUrl: /images/ID_Photo_Maangi.jpg
+        logoUrl: /images/maangi20.png
         name: xxxx
     share:
       Baidu: no
