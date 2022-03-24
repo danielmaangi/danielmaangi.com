@@ -76,7 +76,7 @@ languages:
           enable: yes
           gravatarEmail: ''
           social: yes
-          subtitle: Data, visualization, business intelligence and machine learning.
+          subtitle: Data, visualization, business intelligence and statistical learning.
           title: Daniel Maangi | Welcome to my blog
         rss: 10
       keywords:
