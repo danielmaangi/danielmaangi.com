@@ -77,12 +77,6 @@ languages:
           gravatarEmail: ''
           social: yes
           subtitle: Data, visualization, business intelligence and statistical learning.
-          body: I am passionate and curious about methods and techniques for extracting
-information from data. I have acquired the right tools, knowledge and
-experience enough to uncover hidden gems within sets of structured and semistructured
-data by leveraging a combination of visualization and statistical
-learning to help organisations explore and understand data from disparate
-sources in new and useful ways.
           title: Daniel Maangi | Welcome to my blog
         rss: 10
       keywords:
