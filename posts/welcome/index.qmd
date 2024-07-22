@@ -1,12 +1,44 @@
 ---
 title: "Welcome To My Blog"
-author: "Tristan O'Malley"
-date: "2024-07-19"
+author: "Daniel Maangi"
+date: "2024-07-22"
 categories: [news]
 ---
 
-This is the first post in a Quarto blog. Welcome!
+## Welcome to DanielMaangi.com
+
+Hello and welcome to my new website, DanielMaangi.com!
 
 ![](thumbnail.jpg)
 
-Since this post doesn't specify an explicit `image`, the first image in the post will be used in the listing page of posts.
+I'm Daniel, a seasoned data scientist and analytics engineer with a keen interest in leveraging data science and artificial intelligence (AI) to solve complex problems and drive impactful insights. This website is a platform where I will share my journey, projects, and expertise in these exciting fields.
+
+### What You Can Expect
+
+On this site, you’ll find a variety of content aimed at both beginners and experienced professionals in the fields of data science and AI. Here's a glimpse of what I plan to share:
+
+#### 1. **Project Showcases**
+
+I'll be highlighting some of the key projects I've worked on, including: - **Machine Learning Models**: Building predictive models to uncover trends and patterns in various datasets. - **Data Engineering and ELT Processes**: Developing efficient pipelines for data extraction, loading, and transformation using tools like Python and R. - **Data visualization**: Developing compelling dashboards using tools like Power BI, R shiny and Quarto.
+
+#### 2. **Technical Tutorials**
+
+Expect detailed, step-by-step guides on using various tools and technologies that I frequently work with, such as: - **R and Python**: Programming tips, libraries, and best practices for data science and machine learning. - **Power BI**: Creating impactful visualizations and dashboards to derive actionable insights. - **ELT Pipelines**: Workflow orchestration and best practices for data engineering.
+
+#### 3. **Insights and Innovations**
+
+I am committed to sharing my thoughts on the latest trends and innovations in data science and AI. My goal is to provide valuable insights that can help you stay ahead in this rapidly evolving field.
+
+### Get Involved
+
+I encourage you to explore the website, read my blog posts, and engage with the content. Your feedback and interaction are invaluable as I continue to grow and share my knowledge.
+
+Thank you for visiting DanielMaangi.com. Let's harness the power of data and AI together to create a better world!
+
+------------------------------------------------------------------------
+
+Stay tuned for upcoming posts and exciting content. If you have any questions or topics you'd like me to cover, feel free to reach out.
+
+Best regards,
+
+Daniel
