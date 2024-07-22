@@ -1,0 +1,48 @@
+---
+title: "About"
+image: profile.jpeg
+about:
+  template: jolla
+  links:
+    - icon: X
+      text: "X"
+      href: https://x.com/danielmaangi
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/danielmaangi
+    - icon: github
+      text: Github
+      href: https://github.com/danielmaangi
+---
+
+## About Me
+
+Welcome to my corner of the internet! I'm Daniel, a passionate data scientist and analytics engineer with a deep-seated interest in leveraging data to drive social impact. Over the years, I've honed my skills in data science, analytics, and AI, and I'm excited to share my journey, projects, and insights with you.
+
+### Who I Am
+
+I’m a seasoned data scientist with a rich background in statistics and machine learning. My work has always been inspired by a desire to help organizations solve their most pressing problems and drive meaningful change by leveraging on their data assets. As an avid learner, I continuously seek to expand my knowledge and expertise in data science, engineering, machine learning, and artificial intelligence.
+
+### My Journey
+
+My professional path has led me to explore various facets of data science and engineering. From integrating data from multiple data sources, developing compelling dashboards, to using machine learning to identify trends and patterns in data. My projects reflect my commitment to excellence and innovation. I’ve worked extensively with tools such as R, Python, Airbyte, and Power BI, always striving for efficiency and reproducibility in my workflows.
+
+### Spark Data Impact
+
+In pursuit of my vision to help organizations unlock the true potential of their data, I founded Spark Data Impact. Our mission is to provide top-notch services in data science, analytics, engineering, machine learning, and AI. We believe in the power of data to transform businesses and drive social good, and we are dedicated to making this a reality for our clients.
+
+### My Projects
+
+My portfolio includes a range of projects that highlight my expertise and passion. From creating from visualizing data, integrating data from various sources to machine learning, each project is a testament to my dedication and skill. 
+
+### Thought Leadership
+
+Beyond my technical work, I am committed to becoming a thought leader in data science and AI. I enjoy sharing thought-provoking philosophical content, inspired by thinkers like Socrates and Plato, to engage and inspire others. My goal is to foster a community where ideas and knowledge can be freely exchanged, driving collective growth and understanding.
+
+### Personal Interests
+
+When I'm not immersed in data, I have a keen interest in ancient Kenyan civilization, history, and law. These interests fuel my aspiration to one day pursue a career in politics, where I can leverage my expertise and insights to make a broader impact.
+
+---
+
+Thank you for visiting my website. I invite you to explore my blog, learn more about my projects, and join me in this exciting journey of discovery and innovation. Together, we can harness the power of data to create a better world.

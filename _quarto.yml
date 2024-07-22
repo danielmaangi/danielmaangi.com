@@ -1,0 +1,21 @@
+project:
+  type: website
+
+website:
+  title: "danielmaangi.com"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/danielmaangi
+      - icon: linkedin
+        href: https://www.linkedin.com/in/danielmaangi
+      - icon: twitter
+        href: https://x.com/danielmaangi
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+
